@@ -1,11 +1,12 @@
-- DISPLAY
+- DISPLAY: hiển thị
     + echo: hiển thị nối chuỗi, không thể hiển thị mảng
     + print: không cho hiển thị giá trị nhiều cùng một lúc
     + print_r: hiển thị mảng, đối tượng (array, object)
     + var_dump: hiển thị cả kiểu dữ liệu và dữ liệu
     + var_export: hiển thị dữ liệu
     + Sử dụng thẳng vào HTML được
-- VARIABLES:
+
+- VARIABLES: biến
     + Với biến boolean, false thì sẽ không hiển thị gì cả, true hiển thị 1
     + Nối chuỗi (String Concatenation):
         C1: echo $name.' is '.$age.' years old'."<br>";
@@ -16,7 +17,8 @@
     + Hằng (Constants):
         -- Trước hằng không có dấu $
         -- Ex: define('DATABASE_NAME', 'test_db');
-- ARRAYS:
+
+- ARRAYS: mảng
     + Khai báo:
         --Ex1: $numers = [1, 3, 4, 6];
         --Ex2: $fruits = array('pineapple', 'melon', 'apple');
@@ -50,5 +52,19 @@
         -- var_dump(json_encode($persons)); Chuẩn JSON
         -- json_encode để mang dữ liệu đi nói chuyện với các ngôn ngữ khác, gửi sang app khác
 
-
+- CONDITIONALS: điều kiện
+    + hàm date:
+        -- d: Ngày (01 đến 31)
+        -- m: Tháng (01 đến 12)
+        -- Y: Năm (ví dụ: 2023)
+        -- H: Giờ (00 đến 23).
+        -- i: Phút (00 đến 59).
+        -- s: Giây (00 đến 59).
+        -- l: Thứ (ví dụ: Monday).
+        -- D: Thứ (ví dụ: Mon).
+        -- F: Tháng (ví dụ: January).
+        -- M: Tháng (ví dụ: Jan).
+    *** Lưu ý: Múi giờ mặc định của máy chủ PHP thường được cấu hình trong tệp cấu hình 'php.ini',
+    nếu sử dụng $hours = date("d/m/Y, H/i/s, l/D/F/M") thì mặc định sẽ lấy múi giờ ở Europe/Berlin
+        -- thiết lập timezone trong code: date_default_timezone_set('Asia/Ho_Chi_Minh');
     
