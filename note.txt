@@ -1,7 +1,20 @@
-- HIỂN THỊ MÀN HÌNH
+- DISPLAY
     + echo: hiển thị nối chuỗi, không thể hiển thị mảng
     + print: không cho hiển thị giá trị nhiều cùng một lúc
     + print_r: hiển thị mảng, đối tượng (array, object)
     + var_dump: hiển thị cả kiểu dữ liệu và dữ liệu
     + var_export: hiển thị dữ liệu
     + Sử dụng thẳng vào HTML được
+- VARIABLES:
+    + Với biến boolean, false thì sẽ không hiển thị gì cả, true hiển thị 1
+    + Nối chuỗi (String Concatenation):
+        C1: echo $name.' is '.$age.' years old'."<br>";
+        C2: echo "${name} is ${age} years old";
+    + Biểu thức (Expression):
+        -- Với câu lệnh: echo '1' + '2'; kết quả hiển thị ra 3 (không phải ra 12)
+        -- Cộng (+), Trừ (-), Nhân (*), Chia(/), Chia lấy dư (%)
+    + Hằng (Constants):
+        -- Trước hằng không có dấu $
+        -- Ex: define('DATABASE_NAME', 'test_db');
+
+    
