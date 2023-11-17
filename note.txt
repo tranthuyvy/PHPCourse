@@ -1,0 +1,7 @@
+- HIỂN THỊ MÀN HÌNH
+    + echo: hiển thị nối chuỗi, không thể hiển thị mảng
+    + print: không cho hiển thị giá trị nhiều cùng một lúc
+    + print_r: hiển thị mảng, đối tượng (array, object)
+    + var_dump: hiển thị cả kiểu dữ liệu và dữ liệu
+    + var_export: hiển thị dữ liệu
+    + Sử dụng thẳng vào HTML được
