@@ -67,4 +67,9 @@
     *** Lưu ý: Múi giờ mặc định của máy chủ PHP thường được cấu hình trong tệp cấu hình 'php.ini',
     nếu sử dụng $hours = date("d/m/Y, H/i/s, l/D/F/M") thì mặc định sẽ lấy múi giờ ở Europe/Berlin
         -- thiết lập timezone trong code: date_default_timezone_set('Asia/Ho_Chi_Minh');
-    
+- ITERATIONS: vòng lặp
+    + for
+    + foreach
+    + while
+    + do while
+

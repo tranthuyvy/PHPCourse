@@ -1,5 +1,4 @@
 <?php
-//echo "We talk about Array<br>";
 $some_numers = [1, 3, 4, 6];
 $fruits = array('pineapple', 'melon', 'apple');
 // print_r($fruits);

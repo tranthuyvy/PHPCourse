@@ -1,5 +1,4 @@
 <?php
-// echo "We talk about conditional in PHP<br>";
 $age = 15;
 // if($age >= 18) {
 //     echo "You are greater than or equal to 18 years old";

@@ -1,5 +1,4 @@
 <?php
-// echo "We talk about variables".'<br>';
 $name = 'Vy'; //string
 $age = 22; //integer
 // echo $age;
