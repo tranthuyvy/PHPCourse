@@ -72,4 +72,30 @@
     + foreach
     + while
     + do while
-
+- FUNCTIONS: hàm
+    + Để đứng ở đâu cũng truy cập được biến thì sử dụng global <tên biến>;
+    + Tham số đầu vào của hàm gọi là arguments
+    + Tham số truyền vào là parameters
+    + default arguments' values
+        -- Ex: 
+            function sum($a = 0, $b = 0)
+            {
+                return $a + $b;
+            }
+        -- Nếu như khi ta gọi echo sum(); không truyền tham số nào mặc định sẽ lấy giá trị default
+        -- Nếu truyền giá trị vào thì tính toán bth. echo sum(2, 3);
+    + Một vài hàm có sẵn:
+        -- count($names): đếm số lượng phần tử
+        -- in_array('elon', $names): check xem có phần tử trong mảng không
+        -- array_push($name, 'vy', 'thanh'): thêm vào cuối danh sách
+        -- array_unshift($name, 'thanh', 'vy'): thêm vào đầu danh sách
+        -- array_pop($name): xóa phần tử cuối
+        -- array_shift($names): xóa phần tử đầu
+        -- unset($name[3]): xóa phần tử vị trí bất kỳ nhưng index không đánh lại
+        -- array_chunk($name, 3): chặt mảng ra thành từng khúc
+        -- array_merge($array_one, $array_two): merge 2 mảng lại thành 1
+        -- [...$array]: nhân bản mảng array nằm tại vùng nhớ khác, chỉ giống giá trị, sửa đổi không ảnh hưởng
+        -- $numbers = range(0, 10): tạo ra 1 mảng mag giá trị 0->10
+        -- filter:
+            +-+ $filtered_numbers = array_filter($numbers, fn ($each_number) => $each_number % 2 == 0);
+            print_r($filtered_numbers);
