@@ -122,3 +122,8 @@
         -- Tương tự có thể sử dụng: $email = filter_var($_POST['email'], FILTER_SANITIZE_SPECIAL_CHARS);
         -- Sử dụng htmlspecialchars hoặc filter_var để biến thành chuỗi, 
         tránh hacker xâm nhập gõ lệnh vào thực thi ...
+- COOKIES:
+    + Để lưu trữ data trên Browser
+    + Thông tin lưu trữ sẽ có thời hạn để quản lý 
+    + Set cookie: setcookie('name', 'Vy', time() + 24 * 3600);
+    + Unset cookie: setcookie('name', '', time() - 24 * 3600); //set khoảng thời gian ở quá khứ
