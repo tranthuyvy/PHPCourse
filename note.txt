@@ -106,4 +106,19 @@
     + strtoupper(): chuyển chuỗi thành chữ in hoa
     + str_replace(): tìm và thay thế từ trong chuỗi
     + htmlspecialchars thường sử dụng để lấy data trên form
-
+- SUPER GLOBALS:
+    + Các biến có sẵn trong PHP
+    + Thường có $_ trước tên biến: 
+        -- $_SERVER
+        -- $_POST: dữ liệu không gửi cho trình duyệt, đóng gói thành object và gửi đi
+                **Trường hợp cần sử dụng method POST đối với thông tin nhạy cảm
+        -- $_GET: gửi tham số qua trình duyệt (gửi qua link)
+    + isset(): dùng để ktra có thông tin được gửi lên không
+    + Phương pháp coalescing: 
+        -- Ex: $email = $_GET['email'] ?? '';
+        -- Không có giá trị thì trả về chuỗi rỗng ngược lại gán giá trị vào biến (lưu ý ??)
+    + Khi làm form login sử dụng:
+        -- $password = htmlspecialchars($_POST['password']) ?? '';
+        -- Tương tự có thể sử dụng: $email = filter_var($_POST['email'], FILTER_SANITIZE_SPECIAL_CHARS);
+        -- Sử dụng htmlspecialchars hoặc filter_var để biến thành chuỗi, 
+        tránh hacker xâm nhập gõ lệnh vào thực thi ...
