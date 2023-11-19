@@ -151,4 +151,6 @@
         -- fclose($file_handle);: đóng file
     + Upload images using form (từ trình duyệt lên server PHP)
         -- $permitted_extensions = ['png', 'jpg', 'jpeg', 'gif']; : đuôi ảnh cho phép
-        
+
+- EXCEPTIONS:
+    + Try - Catch - Exception - Finnally
