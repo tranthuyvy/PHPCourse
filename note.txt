@@ -67,11 +67,13 @@
     *** Lưu ý: Múi giờ mặc định của máy chủ PHP thường được cấu hình trong tệp cấu hình 'php.ini',
     nếu sử dụng $hours = date("d/m/Y, H/i/s, l/D/F/M") thì mặc định sẽ lấy múi giờ ở Europe/Berlin
         -- thiết lập timezone trong code: date_default_timezone_set('Asia/Ho_Chi_Minh');
+
 - ITERATIONS: vòng lặp
     + for
     + foreach
     + while
     + do while
+
 - FUNCTIONS: hàm
     + Để đứng ở đâu cũng truy cập được biến thì sử dụng global <tên biến>;
     + Tham số đầu vào của hàm gọi là arguments
@@ -99,6 +101,7 @@
         -- filter:
             +-+ $filtered_numbers = array_filter($numbers, fn ($each_number) => $each_number % 2 == 0);
             print_r($filtered_numbers);
+
 - STRING FUNCTIONS:
     + strlen() : độ dài chuỗi
     + strrev() : đảo ngược chuỗi
@@ -106,6 +109,7 @@
     + strtoupper(): chuyển chuỗi thành chữ in hoa
     + str_replace(): tìm và thay thế từ trong chuỗi
     + htmlspecialchars thường sử dụng để lấy data trên form
+
 - SUPER GLOBALS:
     + Các biến có sẵn trong PHP
     + Thường có $_ trước tên biến: 
@@ -122,8 +126,16 @@
         -- Tương tự có thể sử dụng: $email = filter_var($_POST['email'], FILTER_SANITIZE_SPECIAL_CHARS);
         -- Sử dụng htmlspecialchars hoặc filter_var để biến thành chuỗi, 
         tránh hacker xâm nhập gõ lệnh vào thực thi ...
+
 - COOKIES:
     + Để lưu trữ data trên Browser
     + Thông tin lưu trữ sẽ có thời hạn để quản lý 
     + Set cookie: setcookie('name', 'Vy', time() + 24 * 3600);
     + Unset cookie: setcookie('name', '', time() - 24 * 3600); //set khoảng thời gian ở quá khứ
+
+- SESSIONS:
+    + Dùng để lưu trữ bên phía server
+    + Có thể sử dụng sessions cho nhiều page khác nhau
+    + Nơi nào sử dụng session thì phải có lệnh session_start();
+    + Xóa session bằng câu lệnh session_destroy();
+    + Chuyển đến trang khác sử dụng: header('Location: /sessions.php');
