@@ -64,7 +64,7 @@ $c = array_combine($a, $b);
 $numbers = range(0, 10);
 print_r($numbers);
 //map an array to another array
-//with the same size, but other values
+//with the same size, but other values 
 $squared_numbers = array_map(
     fn ($each_number) =>
     $each_number * $each_number,

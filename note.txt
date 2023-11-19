@@ -99,3 +99,11 @@
         -- filter:
             +-+ $filtered_numbers = array_filter($numbers, fn ($each_number) => $each_number % 2 == 0);
             print_r($filtered_numbers);
+- STRING FUNCTIONS:
+    + strlen() : độ dài chuỗi
+    + strrev() : đảo ngược chuỗi
+    + strtolower(): chuyển chuỗi thành chữ thường
+    + strtoupper(): chuyển chuỗi thành chữ in hoa
+    + str_replace(): tìm và thay thế từ trong chuỗi
+    + htmlspecialchars thường sử dụng để lấy data trên form
+
