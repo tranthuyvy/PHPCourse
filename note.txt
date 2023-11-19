@@ -139,3 +139,14 @@
     + Nơi nào sử dụng session thì phải có lệnh session_start();
     + Xóa session bằng câu lệnh session_destroy();
     + Chuyển đến trang khác sử dụng: header('Location: /sessions.php');
+
+- WORKING WITH FILES:
+    + Mở và đọc file text
+        -- readFile($file_path): hàm đọc có sẵn trong PHP, ở cuối sẽ hiển thị bytes of file
+        -- fopen($file_path, 'r');: mở chỉ để đọc
+        -- fopen($file_path, 'w');: mở chỉ để viết
+        -- PHP_EOL: xuống dòng
+        -- fread($file_handle, filesize($file_path)); : đọc file
+        -- fwrite($file_handle, $file_content); : ghi file
+        -- fclose($file_handle);: đóng file
+    + Upload images using form (từ trình duyệt lên server PHP)
