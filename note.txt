@@ -150,3 +150,5 @@
         -- fwrite($file_handle, $file_content); : ghi file
         -- fclose($file_handle);: đóng file
     + Upload images using form (từ trình duyệt lên server PHP)
+        -- $permitted_extensions = ['png', 'jpg', 'jpeg', 'gif']; : đuôi ảnh cho phép
+        

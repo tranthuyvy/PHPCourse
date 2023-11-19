@@ -1,5 +1,5 @@
 <?php
-echo "File upload in PHP";
+
 if (isset($_POST['submit'])) {
     $permitted_extensions = ['png', 'jpg', 'jpeg', 'gif'];
     $file_name = $_FILES['upload']['name'];
@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
         //validate file extension permitted 
         if (in_array($file_extension, $permitted_extensions)) {
             if ($file_size <= 1000000) {
-                //ok, move from temp folder to /uploads
+                //move from temp folder to /uploads
                 //original file name and uploaded file name 
                 //must be DIFFERENT !, why ?
                 move_uploaded_file($file_tmp_name, $destination_path);
