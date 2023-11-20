@@ -154,3 +154,7 @@
 
 - EXCEPTIONS:
     + Try - Catch - Exception - Finnally
+
+- OOP:
+    + Từ PHP 5 trở đi mới hỗ trợ class
+    
